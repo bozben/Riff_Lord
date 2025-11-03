@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 502781e072e76f947b5c218299942746, type: 3}
+  m_Name: HellionData
+  m_EditorClassIdentifier: Assembly-CSharp::CharacterData_SO
+  characterName: Hellion
+  characterPrefab: {fileID: 8816591887965585486, guid: 6c68e3924392eb84195392cf79897288, type: 3}
+  baseHealth: 130
+  baseAttack: 22
+  baseDefense: 5
+  baseSpeed: 30
+  specialAbility: {fileID: 11400000, guid: 5fd91e8e14987c54ba18a3b3e2c97783, type: 2}
