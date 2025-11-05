@@ -15,6 +15,9 @@ public class BattleSystem : MonoBehaviour
     public Transform championSpawnPoint;
     public Transform heroSpawnPoint;
 
+    [Header("UI")]
+    public Battle_UI battleUI;
+
     private CharacterStats championStats;
     private ATB_Controller championATB;
 
@@ -42,6 +45,11 @@ public class BattleSystem : MonoBehaviour
                 StartCoroutine(CharacterTurn(heroStats, heroATB, championStats, championATB));
             }
         }
+        if (championStats != null && heroStats != null)
+        {
+            battleUI.UpdateChampionUI(championStats, championATB);
+            battleUI.UpdateHeroUI(heroStats, heroATB);
+        }
     }
 
     IEnumerator SetupBattle()
@@ -56,6 +64,8 @@ public class BattleSystem : MonoBehaviour
         heroATB = heroGO.GetComponent<ATB_Controller>();
 
         Debug.Log("Battle Begin: " + championStats.characterData.characterName + " vs " + heroStats.characterData.characterName);
+
+        battleUI.SetupUI(championStats, heroStats);
 
         yield return new WaitForSeconds(1f);
 
@@ -76,13 +86,12 @@ public class BattleSystem : MonoBehaviour
         }
         else
         {
-            // --- TEMEL SALDIRI ---
             Debug.Log(attacker.characterData.characterName + " attacks!");
             target.TakeDamage(attacker.attackPower);
             attacker.GainSP(25); 
         }
 
-        yield return new WaitForSeconds(1.5f);
+        yield return new WaitForSeconds(.2f);
 
         if (target.currentHealth <= 0)
         {
