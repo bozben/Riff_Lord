@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 502781e072e76f947b5c218299942746, type: 3}
+  m_Name: ZombieData
+  m_EditorClassIdentifier: Assembly-CSharp::CharacterData_SO
+  characterName: Zombie
+  characterPrefab: {fileID: 7805840237834728127, guid: ce7c80616367ad144a60e262d5238f33, type: 3}
+  role: 0
+  isUnlocked: 1
+  unlockCost: 0
+  characterDescription: A basic reanimated corpse. He isn't very smart and tends
+    to lose limbs during battle, but he serves his master with undying loyalty.
+  originalHealth: 80
+  originalAttack: 8
+  originalDefense: 0
+  originalSpeed: 35
+  baseHealth: 80
+  baseAttack: 8
+  baseDefense: 0
+  baseSpeed: 35
+  attackSFX: {fileID: 0}
+  superSFX: {fileID: 0}
+  hurtSFX: {fileID: 0}
+  deathSFX: {fileID: 0}
+  spawnHeightOffset: -0.5
+  attackVFX: {fileID: 11400000, guid: 7486fe0a94600d14882014cc5022d0d9, type: 2}
+  spawnRotationY: 70
+  animatorOverride: {fileID: 22100000, guid: bacbaf646d32b3a488c26892813f5127, type: 2}
+  specialAbility: {fileID: 11400000, guid: 4e49e4038dd11024c963f382bb2359a8, type: 2}
+  level: 1
+  healthGrowth: 12
+  attackGrowth: 2
+  defenseGrowth: 0
+  speedGrowth: 3
+  baseUpgradeCost: 50
+  costIncreasePerLevel: 15

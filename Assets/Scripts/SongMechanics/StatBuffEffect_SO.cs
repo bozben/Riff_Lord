@@ -9,15 +9,12 @@ public class StatBuffEffect_SO : RhythmEffect_SO
     [Header("Effect Settings")]
     public Target target;
     public StatType statToModify;
-    [Tooltip("Percentage modifier.")]
-    public int amount;
+
+
     [Tooltip("Effect duration")]
     public float duration;
 
     public override void ApplyEffect(CharacterStats player, CharacterStats enemy)
     {
-        CharacterStats targetStats = (target == Target.Player) ? player : enemy;
-
-        Debug.Log(targetStats.name + "'s " + statToModify + " stat, changed for " + duration + " seconds by " + amount + "%");
     }
 }

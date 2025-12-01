@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 502781e072e76f947b5c218299942746, type: 3}
+  m_Name: AmonGusData
+  m_EditorClassIdentifier: Assembly-CSharp::CharacterData_SO
+  characterName: Amon Gus
+  characterPrefab: {fileID: 1898204540336166682, guid: 1c54ea07c4c6d2a4ca580b6573bab085, type: 3}
+  role: 0
+  isUnlocked: 1
+  unlockCost: 1500
+  characterDescription: He insists he is just a humble servant completing his 'daily
+    tasks', but everyone finds him incredibly... suspicious.
+  originalHealth: 100
+  originalAttack: 30
+  originalDefense: 2
+  originalSpeed: 40
+  baseHealth: 100
+  baseAttack: 30
+  baseDefense: 2
+  baseSpeed: 40
+  attackSFX: {fileID: 0}
+  superSFX: {fileID: 0}
+  hurtSFX: {fileID: 0}
+  deathSFX: {fileID: 0}
+  spawnHeightOffset: -0.5
+  attackVFX: {fileID: 11400000, guid: 7486fe0a94600d14882014cc5022d0d9, type: 2}
+  spawnRotationY: 90
+  animatorOverride: {fileID: 22100000, guid: 1b2e6664f7e443642986f7b16c3bcada, type: 2}
+  specialAbility: {fileID: 11400000, guid: de78007a7e14dae44b18db93b8600da1, type: 2}
+  level: 1
+  healthGrowth: 15
+  attackGrowth: 8
+  defenseGrowth: 1
+  speedGrowth: 4
+  baseUpgradeCost: 100
+  costIncreasePerLevel: 20

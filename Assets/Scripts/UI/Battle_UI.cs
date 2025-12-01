@@ -22,6 +22,19 @@ public class Battle_UI : MonoBehaviour
     public Slider heroATBSlider;
     public TextMeshProUGUI heroATBValueText;
 
+    [Header("Champion Stats Text")]
+    public TextMeshProUGUI championAtkText;
+    public TextMeshProUGUI championDefText;
+    public TextMeshProUGUI championSpdText;
+
+    [Header("Hero Stats Text")]
+    public TextMeshProUGUI heroAtkText;
+    public TextMeshProUGUI heroDefText;
+    public TextMeshProUGUI heroSpdText;
+
+    [Header("Wave UI")]
+    public TextMeshProUGUI waveTitleText;
+
     public void SetupUI(CharacterStats champion, CharacterStats hero)
     {
         championNameText.text = champion.characterData.characterName;
@@ -38,6 +51,13 @@ public class Battle_UI : MonoBehaviour
 
     public void UpdateChampionUI(CharacterStats stats, ATB_Controller atb)
     {
+        if (championNameText.text != stats.characterData.characterName)
+        {
+            championNameText.text = stats.characterData.characterName;
+
+            championHPSlider.maxValue = stats.maxHealth;
+            championSPSlider.maxValue = stats.maxSP;
+        }
         championHPSlider.value = stats.currentHealth;
         championSPSlider.value = stats.currentSP;
         championATBSlider.value = atb.currentATB;
@@ -53,10 +73,20 @@ public class Battle_UI : MonoBehaviour
         {
             championATBValueText.text = Mathf.FloorToInt(atb.currentATB) + " / " + (int)atb.maxATB;
         }
+        if (championAtkText != null) championAtkText.text = "ATK: " + stats.attackPower;
+        if (championDefText != null) championDefText.text = "DEF: %" + stats.defense;
+        if (championSpdText != null) championSpdText.text = "SPD: " + stats.speed;
     }
 
     public void UpdateHeroUI(CharacterStats stats, ATB_Controller atb)
     {
+        if (heroNameText.text != stats.characterData.characterName)
+        {
+            heroNameText.text = stats.characterData.characterName;
+
+            heroHPSlider.maxValue = stats.maxHealth;
+            heroSPSlider.maxValue = stats.maxSP;
+        }
         heroHPSlider.value = stats.currentHealth;
         heroSPSlider.value = stats.currentSP;
         heroATBSlider.value = atb.currentATB;
@@ -72,5 +102,8 @@ public class Battle_UI : MonoBehaviour
         {
             heroATBValueText.text = Mathf.FloorToInt(atb.currentATB) + " / " + (int)atb.maxATB;
         }
+        if (heroAtkText != null) heroAtkText.text = "ATK: " + stats.attackPower;
+        if (heroDefText != null) heroDefText.text = "DEF: %" + stats.defense;
+        if (heroSpdText != null) heroSpdText.text = "SPD: " + stats.speed;
     }
 }

@@ -14,5 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::HealAbility
   abilityName: Divine Aid
   abilityDescription: Paladin prays to the lord above to heal his injuries
-  spCost: 120
-  healAmount: 75
+  spCost: 90
+  abilityVFX: {fileID: 11400000, guid: 38b7cce863034b84c89f54a239b608f0, type: 2}
+  healMultiplier: 3

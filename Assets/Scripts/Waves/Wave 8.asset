@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 631b30390c05a954f914b90b0d879a77, type: 3}
+  m_Name: Wave 8
+  m_EditorClassIdentifier: Assembly-CSharp::WaveData_SO
+  waveName: Wave:5- Gatekeeper
+  waveMusic: {fileID: 8300000, guid: e5554d50751e4fd46a2781a67ff3b56c, type: 3}
+  enemiesInWave:
+  - enemyData: {fileID: 11400000, guid: 0048c65cd7ef80745be78f4740df1b66, type: 2}
+    level: 4
+  - enemyData: {fileID: 11400000, guid: 55cd832fa50407e4aa3224dcb30d123e, type: 2}
+    level: 4
+  rewards:
+    maxGold: 450
+    soulsOnVictory: 20

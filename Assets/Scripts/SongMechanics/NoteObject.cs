@@ -1,37 +1,50 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 public class NoteObject : MonoBehaviour
 {
-    [HideInInspector] 
-    public float speed = 500f;
+    public float speed = 0f;
 
+    private int laneIndex;
+    private ComboManager comboManager;
 
-    //private ComboManager comboManager;
+    private bool isMissed = false;
 
-   /*
-    public void Initialize(ComboManager cm)
+    private float missThresholdX = -950f; 
+    private float destroyThresholdX = -960f;
+
+    public void Initialize(ComboManager cm, int lane, NoteData data = null)
     {
         comboManager = cm;
+        laneIndex = lane;
     }
+
     void Update()
     {
-        // Notayý her saniye sola doðru hareket ettir.
         transform.Translate(Vector3.left * speed * Time.deltaTime, Space.World);
 
-        // Eðer nota vuruþ bölgesini geçip ekranýn çok soluna gittiyse,
-        // bu "Miss" (Kaçýrýldý) anlamýna gelir.
-        // Bu pozisyon deðerini kendi HitZone pozisyonuna göre ayarlaman gerekebilir.
-        if (transform.position.x < -1000f) // Örnek bir ekran dýþý deðeri
+        if (!isMissed && transform.position.x < missThresholdX)
         {
-            // Kaçýrýldýðýnda ComboManager'a haber ver.
-            if (comboManager != null)
+            isMissed = true;
+
+            Image noteImage = GetComponent<Image>();
+            if (noteImage != null)
             {
-                comboManager.NoteMissed();
+                noteImage.color = new Color(0.5f, 0.5f, 0.5f, 0.5f);
             }
 
-            // Kendini yok et.
+            if (comboManager != null) comboManager.NoteMissed();
+            ScoreManager.instance.NoteMissed(5);
+        }
+
+        if (transform.position.x < destroyThresholdX)
+        {
             Destroy(gameObject);
         }
     }
-   */
+
+    public int GetLaneIndex()
+    {
+        return laneIndex;
+    }
 }

@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 631b30390c05a954f914b90b0d879a77, type: 3}
+  m_Name: Wave_3
+  m_EditorClassIdentifier: Assembly-CSharp::WaveData_SO
+  waveName: Wave:3 - Dynamic Duo
+  waveMusic: {fileID: 8300000, guid: e5554d50751e4fd46a2781a67ff3b56c, type: 3}
+  enemiesInWave:
+  - enemyData: {fileID: 11400000, guid: 207028de466077344accb255927c00d1, type: 2}
+    level: 1
+  - enemyData: {fileID: 11400000, guid: ae1854c325676294ea2035656eaedbaa, type: 2}
+    level: 1
+  rewards:
+    maxGold: 140
+    soulsOnVictory: 8

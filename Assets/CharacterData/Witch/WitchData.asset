@@ -1,0 +1,46 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 502781e072e76f947b5c218299942746, type: 3}
+  m_Name: WitchData
+  m_EditorClassIdentifier: Assembly-CSharp::CharacterData_SO
+  characterName: Witch
+  characterPrefab: {fileID: 6115026003637988283, guid: d5790a15c095ed448a9be34413710074, type: 3}
+  role: 2
+  isUnlocked: 0
+  unlockCost: 600
+  characterDescription: A master of earth magic. While she normally supports her
+    allies with healing wards, her forbidden spell can summon a massive boulder to
+    crush enemies.
+  originalHealth: 90
+  originalAttack: 20
+  originalDefense: 2
+  originalSpeed: 15
+  baseHealth: 90
+  baseAttack: 20
+  baseDefense: 2
+  baseSpeed: 15
+  attackSFX: {fileID: 0}
+  superSFX: {fileID: 0}
+  hurtSFX: {fileID: 0}
+  deathSFX: {fileID: 0}
+  spawnHeightOffset: -0.5
+  attackVFX: {fileID: 11400000, guid: b47b9153091c5b444b87f41eddfaab7e, type: 2}
+  spawnRotationY: 145
+  animatorOverride: {fileID: 22100000, guid: ded553f2e000e824cbf3d86574879d1e, type: 2}
+  specialAbility: {fileID: 11400000, guid: d833cace5fc57da4f9d3a879cee9a15a, type: 2}
+  level: 1
+  healthGrowth: 15
+  attackGrowth: 5
+  defenseGrowth: 1
+  speedGrowth: 1
+  baseUpgradeCost: 100
+  costIncreasePerLevel: 20

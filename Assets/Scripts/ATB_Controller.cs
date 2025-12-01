@@ -7,8 +7,12 @@ public class ATB_Controller : MonoBehaviour
     public float maxATB = 100f;
     public float currentATB = 0f;
 
+
     [HideInInspector]
     public bool isTurnReady = false;
+    public bool isPaused = false;
+
+
 
     void Awake()
     {
@@ -17,6 +21,11 @@ public class ATB_Controller : MonoBehaviour
 
     void Update()
     {
+        if (isPaused)
+        {
+            return;
+        }
+
         if (isTurnReady)
         {
             return;

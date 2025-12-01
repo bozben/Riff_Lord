@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 502781e072e76f947b5c218299942746, type: 3}
+  m_Name: GreatSwordFoxDataLevel 5
+  m_EditorClassIdentifier: Assembly-CSharp::CharacterData_SO
+  characterName: Fox
+  characterPrefab: {fileID: 4619383701315159130, guid: b4f64e96e75edaa48b927d309b9674b2, type: 3}
+  role: 0
+  isUnlocked: 0
+  unlockCost: 500
+  characterDescription: 
+  originalHealth: 300
+  originalAttack: 35
+  originalDefense: 9
+  originalSpeed: 22
+  baseHealth: 300
+  baseAttack: 35
+  baseDefense: 9
+  baseSpeed: 22
+  attackSFX: {fileID: 0}
+  superSFX: {fileID: 0}
+  hurtSFX: {fileID: 0}
+  deathSFX: {fileID: 0}
+  spawnHeightOffset: -0.5
+  attackVFX: {fileID: 11400000, guid: 7486fe0a94600d14882014cc5022d0d9, type: 2}
+  spawnRotationY: 270
+  animatorOverride: {fileID: 22100000, guid: 77a52ba69e1d6f14ca859d93d4d198a7, type: 2}
+  specialAbility: {fileID: 11400000, guid: a7507996e1b537e4893c69c8e7a22cc9, type: 2}
+  level: 1
+  healthGrowth: 0
+  attackGrowth: 0
+  defenseGrowth: 0
+  speedGrowth: 0
+  baseUpgradeCost: 100
+  costIncreasePerLevel: 20

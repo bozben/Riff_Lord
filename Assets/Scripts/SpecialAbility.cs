@@ -7,6 +7,6 @@ public abstract class SpecialAbility : ScriptableObject
     [TextArea(3, 5)]
     public string abilityDescription;
     public int spCost = 100;
-
+    public CombatVFX_SO abilityVFX;
     public abstract void ActivateAbility(CharacterStats attacker, CharacterStats target);
 }

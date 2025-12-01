@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 502781e072e76f947b5c218299942746, type: 3}
+  m_Name: ClericDataLevel 4
+  m_EditorClassIdentifier: Assembly-CSharp::CharacterData_SO
+  characterName: Cleric
+  characterPrefab: {fileID: 4526327680577241503, guid: 3d3608554d15c3444940eb14a7818b53, type: 3}
+  role: 2
+  isUnlocked: 0
+  unlockCost: 500
+  characterDescription: 
+  originalHealth: 160
+  originalAttack: 22
+  originalDefense: 5
+  originalSpeed: 16
+  baseHealth: 160
+  baseAttack: 22
+  baseDefense: 5
+  baseSpeed: 16
+  attackSFX: {fileID: 0}
+  superSFX: {fileID: 0}
+  hurtSFX: {fileID: 0}
+  deathSFX: {fileID: 0}
+  spawnHeightOffset: -0.5
+  attackVFX: {fileID: 11400000, guid: 38b7cce863034b84c89f54a239b608f0, type: 2}
+  spawnRotationY: 300
+  animatorOverride: {fileID: 22100000, guid: ab4789dbbdb055943a6ed1fc02481fa7, type: 2}
+  specialAbility: {fileID: 11400000, guid: 32fffae2224c61342ac05553c32371c2, type: 2}
+  level: 1
+  healthGrowth: 0
+  attackGrowth: 0
+  defenseGrowth: 0
+  speedGrowth: 0
+  baseUpgradeCost: 100
+  costIncreasePerLevel: 20

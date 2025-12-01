@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 502781e072e76f947b5c218299942746, type: 3}
+  m_Name: AxeData_Level 1
+  m_EditorClassIdentifier: Assembly-CSharp::CharacterData_SO
+  characterName: Axe Knight
+  characterPrefab: {fileID: 3254399006424838025, guid: 34e82d3777990f24e93305ec041f7462, type: 3}
+  role: 0
+  isUnlocked: 0
+  unlockCost: 500
+  characterDescription: 
+  originalHealth: 90
+  originalAttack: 12
+  originalDefense: 3
+  originalSpeed: 32
+  baseHealth: 90
+  baseAttack: 12
+  baseDefense: 3
+  baseSpeed: 32
+  attackSFX: {fileID: 0}
+  superSFX: {fileID: 0}
+  hurtSFX: {fileID: 0}
+  deathSFX: {fileID: 0}
+  spawnHeightOffset: -0.5
+  attackVFX: {fileID: 11400000, guid: 7486fe0a94600d14882014cc5022d0d9, type: 2}
+  spawnRotationY: 300
+  animatorOverride: {fileID: 22100000, guid: 44006bbcfb4309f45a2a3f1b27580d2d, type: 2}
+  specialAbility: {fileID: 11400000, guid: 224f77ce566729141befebd0274d8037, type: 2}
+  level: 1
+  healthGrowth: 0
+  attackGrowth: 0
+  defenseGrowth: 0
+  speedGrowth: 0
+  baseUpgradeCost: 100
+  costIncreasePerLevel: 20
